@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FilterSimilarTransactionTest {
 
     @Test
-    public void returnTrueWhenDuplicateTransaction(){
+    public void returnTrueWhenSimilarTransaction(){
         FilterSimilarTransaction filterSimilarTransaction = new FilterSimilarTransactionImpl();
         FinancialTransaction transaction = FinancialTransaction.builder()
                 .transactionAmount(BigDecimal.valueOf(-20000))
@@ -36,7 +36,7 @@ public class FilterSimilarTransactionTest {
         assertThat(filterSimilarTransaction.isSimilar(transaction, duplicateTransaction)).isTrue();
     }
     @Test
-    public void returnFalseWhenNotDuplicateTransaction(){
+    public void returnFalseWhenNotSimilarTransaction(){
         FilterSimilarTransaction filterSimilarTransaction = new FilterSimilarTransactionImpl();
         FinancialTransaction transaction = FinancialTransaction.builder()
                 .transactionAmount(BigDecimal.valueOf(-20000))
