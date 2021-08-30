@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 @Log4j2
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/files")
 public class FileUploadController {
