@@ -30,9 +30,4 @@ public class FilterSimilarTransactionImpl implements FilterSimilarTransaction {
 
     }
 
-    @Override
-    public List<FinancialTransaction> filter(List<FinancialTransaction> transactions) {
-
-        return transactions.stream().distinct().collect(Collectors.toUnmodifiableList());
-            }
 }
