@@ -12,7 +12,7 @@
     <artifactId>financial-reconciliation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>financial-reconciliation</name>
-    <description>Project for Tutuka&apos;s test</description>
+    <description>Financial reconciliation of files</description>
     <properties>
         <java.version>11</java.version>
     </properties>
